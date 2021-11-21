@@ -27,7 +27,7 @@ The main objective here is to make sure all translation related changes in the o
 You can help in several ways:
 - If you are contributing translations to Birday, make sure you also open a pull request here, it would be particularly helpful to others if you also link to the upstream pull request.
 - If someone doesn't do the above, you can do it for them.
-- You can also help by just using the app in different languages and sending feedback.\
+- You can also help by just using the app in different languages and sending feedback.
 
 Improving this documentation  would also be of great help!\
 Depending on your level of expertise, you might need some help. Feel free to reach out in the Issues tab, or take a look at these resources:

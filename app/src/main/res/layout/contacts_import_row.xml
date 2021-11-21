@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Duration and repeat delay must be hardcoded -->
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/importContacts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:shimmer_auto_start="false"
+    app:shimmer_base_alpha="@dimen/shimmer_base_alpha"
+    app:shimmer_dropoff="@dimen/shimmer_dropoff"
+    app:shimmer_duration="200"
+    app:shimmer_highlight_alpha="@dimen/shimmer_highlight_alpha"
+    app:shimmer_intensity="@dimen/shimmer_intensity"
+    app:shimmer_repeat_delay="1000"
+    app:shimmer_repeat_mode="reverse"
+    app:shimmer_tilt="@dimen/shimmer_tilt">
+
+    <LinearLayout
+        android:id="@+id/importContactsLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:hapticFeedbackEnabled="false"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/settings_row_padding"
+        android:paddingVertical="@dimen/settings_row_padding">
+
+        <TextView
+            android:id="@+id/importContactsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/import_contacts_title"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+        <TextView
+            android:id="@+id/importContactsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/import_contacts_description"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textSize="@dimen/custom_preference_text_size" />
+
+    </LinearLayout>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

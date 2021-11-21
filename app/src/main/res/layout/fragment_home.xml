@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Focusable in touch mode removes the default focus from the search bar when focused for the first time -->
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    app:layoutDescription="@xml/fragment_home_scene">
+
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/confettiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/homeMiniFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="@dimen/mini_fab_opacity"
+        android:contentDescription="@string/cancel"
+        android:hapticFeedbackEnabled="false"
+        android:padding="@dimen/between_row_padding"
+        app:backgroundTint="?android:textColorPrimary"
+        app:elevation="@dimen/bottom_navbar_elevation"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@id/homeCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/homeCard"
+        app:rippleColor="?colorAccent"
+        app:srcCompat="@drawable/ic_arrow_up_24dp"
+        app:tint="?colorAccent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/homeCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/card_margin"
+        android:layout_marginTop="@dimen/linear_vertical_margin"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/rounded_corners"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="?colorAccent"
+        app:strokeColor="@color/goodGrayTranslucent"
+        app:strokeWidth="@dimen/card_stroke">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/card_padding">
+
+            <!-- Duration and repeat delay must be hardcoded -->
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/homeCardShimmer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shimmer_auto_start="false"
+                app:shimmer_base_alpha="@dimen/shimmer_base_alpha"
+                app:shimmer_dropoff="@dimen/shimmer_dropoff"
+                app:shimmer_duration="600"
+                app:shimmer_highlight_alpha="@dimen/shimmer_highlight_alpha"
+                app:shimmer_intensity="@dimen/shimmer_intensity"
+                app:shimmer_repeat_delay="2400"
+                app:shimmer_repeat_mode="reverse"
+                app:shimmer_tilt="@dimen/shimmer_tilt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/card_margin_big">
+
+                    <TextView
+                        android:id="@+id/upcomingTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/card_image_padding"
+                        android:text="@string/next_event"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        app:layout_constraintEnd_toStartOf="@+id/homeCardGuideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/upcomingSubtitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin"
+                        android:layout_marginEnd="@dimen/card_image_padding"
+                        android:text="@string/no_next_event"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        app:layout_constraintEnd_toStartOf="@+id/homeCardGuideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/upcomingTitle" />
+
+                    <TextView
+                        android:id="@+id/upcomingDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_margin_big"
+                        android:layout_marginEnd="@dimen/card_image_padding"
+                        android:text="@string/no_next_event_description"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary"
+                        app:layout_constraintEnd_toStartOf="@+id/homeCardGuideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/upcomingSubtitle" />
+
+                    <!-- Media -->
+                    <ImageView
+                        android:id="@+id/upcomingImage"
+                        android:layout_width="@dimen/card_image_height"
+                        android:layout_height="@dimen/card_image_height"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/animated_party_popper"
+                        app:layout_constraintBottom_toBottomOf="@id/upcomingDescription"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/homeCardGuideline"
+                        app:layout_constraintTop_toTopOf="@id/upcomingTitle" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/homeCardGuideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.8" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/homeSearchLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_event"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:boxCornerRadiusBottomEnd="@dimen/rounded_corners"
+                app:boxCornerRadiusBottomStart="@dimen/rounded_corners"
+                app:boxCornerRadiusTopEnd="@dimen/rounded_corners"
+                app:boxCornerRadiusTopStart="@dimen/rounded_corners"
+                app:boxStrokeWidth="@dimen/card_stroke"
+                app:endIconContentDescription="@string/cancel"
+                app:endIconMode="clear_text"
+                app:endIconTint="?colorAccent"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/homeCardShimmer"
+                app:startIconContentDescription="@string/search_event"
+                app:startIconDrawable="@drawable/ic_person_search_24dp"
+                app:startIconTint="?colorAccent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/homeSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/search_event"
+                    android:inputType="textPersonName"
+                    android:maxLength="25"
+                    android:padding="0dp"
+                    android:textCursorDrawable="@drawable/custom_cursor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/noEvents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="3"
+        android:paddingHorizontal="@dimen/placeholders_padding"
+        android:paddingVertical="@dimen/placeholders_padding"
+        android:scrollbarSize="0dp"
+        android:text="@string/no_events"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="@color/goodGraySemiTranslucent"
+        app:drawableTint="@color/goodGraySemiTranslucent"
+        app:drawableTopCompat="@drawable/ic_sad_72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeCard" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingVertical="@dimen/recycler_extra_space_vertical"
+        android:scrollbarSize="0dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:fastScrollEnabled="true"
+        app:fastScrollHorizontalThumbDrawable="@drawable/scroll_thumb_drawable"
+        app:fastScrollHorizontalTrackDrawable="@drawable/scroll_line_drawable"
+        app:fastScrollVerticalThumbDrawable="@drawable/scroll_thumb_drawable"
+        app:fastScrollVerticalTrackDrawable="@drawable/scroll_line_drawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeCard" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

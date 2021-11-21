@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Basic colors -->
+    <color name="colorAccent">@color/aquaAccent</color>
+    <color name="almostWhite">#fbfbfb</color>
+    <color name="goodGray">#959595</color>
+    <color name="goodGraySemiTranslucent">#c5959595</color>
+    <color name="goodGrayTranslucent">#66909090</color>
+    <color name="deepGray">#0f0f0f</color>
+    <color name="shadowGray">#a00f0f0f</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="redError">#70df5252</color>
+
+    <!-- Light theme colors -->
+    <color name="colorBackground">#fefefe</color>
+    <color name="colorPrimary">#fefefe</color>
+    <color name="textColorPrimary">#1f1f1f</color>
+    <color name="textColorSecondary">#252525</color>
+
+    <!-- Dark theme colors -->
+    <color name="colorBackgroundInverse">#1f1f1f</color>
+    <color name="colorPrimaryInverse">#1f1f1f</color>
+    <color name="textColorPrimaryInverse">#f0f0f0</color>
+    <color name="textColorSecondaryInverse">#e5e5e5</color>
+
+    <!-- Accents -->
+    <color name="aquaAccent">#5abf95</color>
+    <color name="brownAccent">#c55a2c</color>
+    <color name="blueAccent">#4285f4</color>
+    <color name="greenAccent">#3ddc84</color>
+    <color name="yellowAccent">#f4b400</color>
+    <color name="orangeAccent">#ff7522</color>
+    <color name="tealAccent">#008080</color>
+    <color name="violetAccent">#ab47bc</color>
+    <color name="pinkAccent">#ff66cc</color>
+    <color name="lightBlueAccent">#29b6f6</color>
+    <color name="redAccent">#ff5252</color>
+    <color name="limeAccent">#c5de00</color>
+    <color name="crimsonAccent">#dc143c</color>
+
+    <!-- Slides -->
+    <color name="slideOne">#4285f4</color>
+    <color name="slideTwo">#222222</color>
+    <color name="slideThree">#53a360</color>
+
+</resources>

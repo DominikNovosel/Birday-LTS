@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="themes">
+        <item>@string/system_theme</item>
+        <item>@string/dark_theme</item>
+        <item>@string/light_theme</item>
+    </string-array>
+
+    <string-array name="themeValues">
+        <item>system</item>
+        <item>dark</item>
+        <item>light</item>
+    </string-array>
+
+    <string-array name="accents">
+        <item>@string/aqua</item>
+        <item>@string/brown</item>
+        <item>@string/blue</item>
+        <item>@string/green</item>
+        <item>@string/orange</item>
+        <item>@string/yellow</item>
+        <item>@string/teal</item>
+        <item>@string/violet</item>
+        <item>@string/pink</item>
+        <item>@string/light_blue</item>
+        <item>@string/red</item>
+        <item>@string/lime</item>
+        <item>@string/crimson</item>
+    </string-array>
+
+    <string-array name="accentValues">
+        <item>aqua</item>
+        <item>brown</item>
+        <item>blue</item>
+        <item>green</item>
+        <item>orange</item>
+        <item>yellow</item>
+        <item>teal</item>
+        <item>violet</item>
+        <item>pink</item>
+        <item>lightBlue</item>
+        <item>red</item>
+        <item>lime</item>
+        <item>crimson</item>
+    </string-array>
+
+    <string-array name="additionalNotification">
+        <item>@string/no_additional_notification</item>
+        <item>@string/one_day_before</item>
+        <item>@string/two_days_before</item>
+        <item>@string/three_days_before</item>
+        <item>@string/four_days_before</item>
+        <item>@string/five_days_before</item>
+        <item>@string/six_days_before</item>
+        <item>@string/seven_days_before</item>
+    </string-array>
+
+    <string-array name="additionalNotificationValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+</resources>

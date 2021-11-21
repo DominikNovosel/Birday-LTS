@@ -1,22 +1,22 @@
 Note: this document is still a work in progress.
 # Birday LTS
 This repository is based on the 2.1.0 release of https://github.com/m-i-n-a-r/birday. You can see the content of the original README at the bottom of this page.\
-Why isn't it a direct fork? Because after the changes i made, I couldn't for the life of me find a way to have it marked as a fork in a way that wasn't excrutiatingly cumbersome. Thus, it'll probably be archived and replaced when the next stable version is released.
+Why isn't it a direct fork? Because after the changes i made, I couldn't for the life of me find a way to have it marked as a fork in a way that wasn't excrutiatingly cumbersome. Heck, it took me long enough to even figure out how to upload everything. Thus, it'll probably be archived and replaced when the next stable version is released.
 
 ## Why does it exist?
 The original author, @m-i-n-a-r is frequently very busy and rarely updates the app, which means users and some translators won't see it in their language for a very long time. This repo hopes to make Birday more accessible to users, easier to test for translators, and maybe help the original author keep it up to date by updating it with the latest translations from the upstream [master](https://github.com/m-i-n-a-r/birday).
 
 # Installation
-There are several ways for this, let's start with the most convenient.<br> 
-## F-Droid
+There are several ways to do this, let's start with the most convenient.<br> 
+### F-Droid
 As far as I can tell, @Poussinou took on the responsibility to maintain Birday on F-Droid. Considering how F-Droid works, updates are likely contingent on m-i-n-a-r's publishing of releases. We'd have to contact Poussinou directly to make this version available there, but i personally couldn't find any contact information.<br>
-## Play Store
+### Play Store
  As for Google Play, I'll try to convince m-i-n-a-r to periodically push out updates to the Play Store so you can: <br>
  [<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
      alt="Get it on Google Play"
      height="80">](https://play.google.com/store/apps/details?id=com.minar.birday)
 
- ## Sideloading   
+ ### Sideloading   
 If neither prove to be viable options, or the version you need isn't available yet, you can head over to the [Releases](https://github.com/DominikNovosel/Birday-LTS) and tap on the APK to download it to your phone. Navigate to it in your file manager and tap it. You may be prompted to allow installing apps from foreign sources and a see a security warning from Play Services (which you can safely ignore, it's just appearing because the app is unsigned).<br>
 **Important!** <br>
 If you already installed Birday from another source, you'll need to uninstall it first. Before doing so, make sure to make a backup from the app's settings menu and move it somewhere safe, also write down the values of any settings you wish to keep, because all of this data will be removed in the installation process.

@@ -3,7 +3,7 @@ Note: this document is still a work in progress.
 This repository is based on the 2.1.0 release of https://github.com/m-i-n-a-r/birday. You can see the content of the original README at the bottom of this page.\
 Why isn't it a direct fork? Because after the changes i made, I couldn't for the life of me find a way to have it marked as a fork in a way that wasn't excrutiatingly cumbersome. Heck, it took me long enough to even figure out how to upload everything. Thus, it'll probably be archived and replaced when the next stable version is released.
 
-## Why does it exist?
+### Why does it exist?
 The original author, @m-i-n-a-r is frequently very busy and rarely updates the app, which means users and some translators won't see it in their language for a very long time. This repo hopes to make Birday more accessible to users, easier to test for translators, and maybe help the original author keep it up to date by updating it with the latest translations from the upstream [master](https://github.com/m-i-n-a-r/birday).
 
 # Installation
@@ -19,7 +19,7 @@ As far as I can tell, @Poussinou took on the responsibility to maintain Birday o
  ### Sideloading   
 If neither prove to be viable options, or the version you need isn't available yet, you can head over to the [Releases](https://github.com/DominikNovosel/Birday-LTS) and tap on the APK to download it to your phone. Navigate to it in your file manager and tap it. You may be prompted to allow installing apps from foreign sources and a see a security warning from Play Services (which you can safely ignore, it's just appearing because the app is unsigned).<br>
 **Important!** <br>
-If you already installed Birday from another source, you'll need to uninstall it first. Before doing so, make sure to make a backup from the app's settings menu and move it somewhere safe, also write down the values of any settings you wish to keep, because all of this data will be removed in the installation process.
+If you already installed Birday from another source, you'll need to uninstall it first. Before doing so, make sure to make a backup from the app's settings menu and move it somewhere safe, also write down the values of any settings you wish to keep, because all of this data will be removed during the uninstallation.
 
 # Contributing
 The main objective here is to make sure all translation related changes in the original repository are also carried over to this one.
@@ -37,7 +37,7 @@ Depending on your level of expertise, you might need some help. Feel free to rea
 
 # Original README:
 
-## Birday
+# Birday
 
 An open source app to remember birthdays and events without having to open Facebook, set alarms or rely on Google Calendar.
 
@@ -69,7 +69,7 @@ This is an open source app to remember **birthdays** in a fast, light and beauti
 | **Polish**              | complete     | mateusz-bak    |                             |
 | **Croatian**            | complete     | Dominik Novosel| Dominik Novosel             |
 | **Portuguese**          | complete     | smarquespt     | smarquespt                  |
-| **Brazilian**           | needs update | BadJuice67     |                             |
+| **Brazilian**           | complete     | BadJuice67     | Paiusco                     |
 | **Romanian**            | complete     | ygorigor       | ygorigor                    |
 | **Traditional Chinese** | complete     | Still34        |                             |
 
@@ -78,7 +78,7 @@ This is an open source app to remember **birthdays** in a fast, light and beauti
 - Additional notification up to 7 days before the event
 - Fetch the existing birthdays from the contacts app, images included!
 - Easily backup and restore your saved events!
-- insert an event manually, just specifying a name, an optional surnamen an image and a date (with optional year)
+- insert an event manually, just specifying a name, an optional surname an image and a date (with optional year)
 - Choose your favorite events to see detailed information about them and a countdown for each one
 - Tap on an event to see every possible detail and the available actions
 - The birthdays are also automagically backed up in cloud by Google Play Services when the app is installed from Play Store
@@ -125,6 +125,8 @@ The app is available through Google Play and F-Droid\
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
      alt="Get it on Google Play"
      height="80">](https://play.google.com/store/apps/details?id=com.minar.birday)
+\
+There is also a long term support version available, ready to be compiled and used when this repo is messed up by my partial updates. I'm planning to create a separate branch for development and keep the master branch clean and working, but that's a good solution too. Huge thanks to @DominikNovosel for the constant help in the maintenance of this project :) https://github.com/DominikNovosel/Birday-LTS <br><br> *(Dominik's note: Aawww... thanks! ❤️)*
 
 ## Credits and contributions
 Birday uses some open source libraries, just a few:

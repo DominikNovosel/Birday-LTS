@@ -1,3 +1,8 @@
+# Archived!
+This repo is archived and probably won't be updated anymore, the reason being that the main Birday repo has finally switched to keeping its master branch stable, and using a development branch for everything else. Soon, a GitHub Action should be configured to output an APK to https://github.com/m-i-n-a-r/birday/releases every so often, so you can install that with the same procedure described below.
+
+---
+
 Note: this document is still a work in progress.
 # Birday LTS
 This repository is based on the 2.1.0 release of https://github.com/m-i-n-a-r/birday. You can see the content of the original README at the bottom of this page.\
